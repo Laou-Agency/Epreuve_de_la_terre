@@ -8,6 +8,6 @@ arguments = "je suis solide !"
 # To extract words from string
 result = arguments.split()
 
-# printing result
+# printing final result 
 for i in result:
     print(i)
