@@ -1,13 +1,4 @@
-# Extract each elements from string
-# using split()
+import sys
 
-# Initializing string
-arguments = "je suis solide !"
-
-# Using split()
-# To extract words from string
-result = arguments.split()
-
-# printing final result 
-for i in result:
-    print(i)
+for argument in sys.argv[1:]:
+    print(argument)
