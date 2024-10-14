@@ -1,20 +1,38 @@
 import sys
 
-# Check if an argument is given
-if len(sys.argv) != 2:
-    print("Tu ne me la mettras pas à l'envers.")
-    sys.exit()
+def get_argument():
+    if len(sys.argv) != 2:
+        print("Tu ne me la mettras pas à l'envers.")
+        return None
+    return sys.argv[1]
 
-arg = sys.argv[1]
+def is_valid_number(arg):
+    # To check if the argument is an even number
+    if arg.isdigit():
+        return True
+    else:
+        return False
 
-# Check if the argument is an even number
-if arg.isdigit():
-    number = int(arg)
-    # Check if the number is even or odd
+def check_even_or_odd(number):
     if number % 2 == 0:
         print("pair")
     else:
         print("impair")
-else:
-    # If the argument is an even number, print the error message
-    print("Tu ne me la mettras pas à l'envers.")
+
+def main():
+    arg = get_argument()
+    if arg is None:
+        return
+
+    # Using a while loop for managing errors
+    while True:
+        if is_valid_number(arg):
+            number = int(arg)
+            check_even_or_odd(number)
+            break
+        else:
+            print("Tu ne me la mettras pas à l'envers.")
+            break
+
+if __name__ == "__main__":
+    main()
