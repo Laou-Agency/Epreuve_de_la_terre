@@ -1,15 +1,20 @@
 import sys
 
-if len(sys.argv) > 1:
-    number = sys.argv[1] # Récupérer le nombre entier donné en argument
-    if number < 0:
-        print("Tu ne me la mettras pas à l'envers.")
-while True:
-   value == str.isalpha():
+# Check if an argument is given
+if len(sys.argv) != 2:
     print("Tu ne me la mettras pas à l'envers.")
-if value is None:
-    print("Tu ne me la mettras pas à l'envers.")
-if number % 2 == 0:
-    print("pair")
+    sys.exit()
+
+arg = sys.argv[1]
+
+# Check if the argument is an even number
+if arg.isdigit():
+    number = int(arg)
+    # Check if the number is even or odd
+    if number % 2 == 0:
+        print("pair")
+    else:
+        print("impair")
 else:
-    print("impair")    
+    # If the argument is an even number, print the error message
+    print("Tu ne me la mettras pas à l'envers.")
