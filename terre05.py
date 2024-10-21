@@ -1,44 +1,59 @@
 import sys
 
 def get_arguments():
-    # Return the list of arguments passed to the script
-    return sys.argv[1:]
+    # Stocker les arguments dans une variable avant de les retourner
+    arguments = sys.argv[1:]
+    return arguments
 
-def check_divisor(dvr):
-    # Check if divider equals 0
-    if dvr == 0:
+def check_divisor(divisor):
+    # Vérifier si le diviseur est égal à 0
+    if divisor == 0:
         print("erreur.")
         return False
     return True
 
-def check_dividend(x, y):
-    # Check if dividend is lower than divisor
-    if x < y:
+def check_dividend(dividend, divisor):
+    # Vérifier si le dividende est inférieur au diviseur
+    if dividend < divisor:
         print("erreur.")
         return False
     return True
 
-def division(dvd, dvr):
-    quotient = dvd // dvr
-    reste = dvd % dvr
+def is_integer(value):
+    # Vérifier si une valeur peut être convertie en entier
+    is_valid = value.lstrip('-').isdigit()
+    if not is_valid:
+        print(f"erreur: '{value}' n'est pas un entier valide.")
+    return is_valid
+
+def division(dividend, divisor):
+    # Calculer le quotient et le reste de la division
+    quotient = dividend // divisor
+    reste = dividend % divisor
     return quotient, reste
 
-def main():
-    args = get_arguments()
+# Exécution directe du programme avec gestion d'erreurs
+arguments = get_arguments()
 
-    # Aguments supposed to be even numbers
-    dividend = int(args[0])
-    divisor = int(args[1])
+# Vérification que deux arguments sont fournis
+nombre_arguments = len(arguments)
+if nombre_arguments != 2:
+    print("erreur: deux arguments sont nécessaires.")
+else:
+    # Récupération des valeurs des arguments
+    argument_1 = arguments[0]
+    argument_2 = arguments[1]
 
-    if not check_divisor(divisor):
-        return
+    # Vérification si les arguments sont des entiers
+    if is_integer(argument_1) and is_integer(argument_2):
+        dividend = int(argument_1)
+        divisor = int(argument_2)
 
-    if not check_dividend(dividend, divisor):
-        return
+        # Vérification des conditions de division
+        est_diviseur_valide = check_divisor(divisor)
+        est_dividende_valide = check_dividend(dividend, divisor)
 
-    quotient, reste = division(dividend, divisor)
-    print(f"résultat: {quotient}")
-    print(f"reste: {reste}")
-
-if __name__ == "__main__":
-    main()
+        if est_diviseur_valide and est_dividende_valide:
+            quotient, reste = division(dividend, divisor)
+            print(f"résultat: {quotient}")
+            print(f"reste: {reste}")
