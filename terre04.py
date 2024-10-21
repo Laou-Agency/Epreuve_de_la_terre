@@ -1,30 +1,35 @@
 import sys
 
-def get_argument():
-    if len(sys.argv) != 2:
+def get_arguments():
+    # Retourne la liste des arguments passés au script
+    return sys.argv[1:]
+
+def check_argument_count(arguments):
+    # Vérifie si le nombre d'arguments est correct
+    if len(arguments) != 1:
         print("Tu ne me la mettras pas à l'envers.")
-        return None
-    return sys.argv[1]
+        return False
+    return True
 
 def is_valid_number(arg):
-    # To check if the argument is an even number
-    if arg.isdigit():
-        return True
-    else:
-        return False
+    # Vérifie si l'argument est un entier positif
+    return arg.isdigit()
 
 def check_even_or_odd(number):
+    # Affiche si le nombre est pair ou impair
     if number % 2 == 0:
         print("pair")
     else:
         print("impair")
 
 def main():
-    arg = get_argument()
-    if arg is None:
+    arguments = get_arguments()
+    
+    if not check_argument_count(arguments):
         return
-
-    # Using a while loop for managing errors
+    
+    arg = arguments[0]
+    
     while True:
         if is_valid_number(arg):
             number = int(arg)
