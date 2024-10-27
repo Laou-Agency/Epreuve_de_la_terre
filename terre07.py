@@ -1,41 +1,51 @@
 import sys
-import re
 
-def get_argument():
-    arguments = sys.argv[1:]
-    count = 0
-    for arg in arguments:
-        count += 1
-        if count > 1:
-            break
-    if count != 1:
-        print("erreur.")
-        sys.exit()
-    for arg in arguments:
-        return arg  # Retourne le seul argument fourni
+def power(base, exponent):
+    # Cas limite : tout nombre élevé à la puissance 0 est 1
+    if exponent == 0:
+        return 1
 
-def count_chars(s):
-    count = 0
-    for _ in s:
-        count += 1
-    return count
+    # Cas de base : si l'exposant est pair
+    if exponent % 2 == 0:
+        half_power = power(base * base, exponent // 2)
+        return half_power
 
-def is_number(s):
-    # Utilise une expression régulière pour vérifier si la chaîne est un nombre
-    number_pattern = re.compile(r'^-?\d+(\.\d+)?$')
-    s = s.strip()
-    if number_pattern.match(s):
-        return True
-    else:
+    # Si l'exposant est impair
+    return base * power(base * base, (exponent - 1) // 2)
+
+def is_integer(s):
+    if s == '':
         return False
+    if s[0] == '-':
+        return s[1:].isdigit()
+    return s.isdigit()
 
 def main():
-    arg = get_argument()
-    if is_number(arg):
+    arguments = sys.argv[1:]
+    if len(arguments) != 2:
         print("erreur.")
         sys.exit()
-    else:
-        print(count_chars(arg))
+
+    base_str = arguments[0]
+    exponent_str = arguments[1]
+
+    # Vérification que la base est un entier
+    if not is_integer(base_str):
+        print("erreur.")
+        sys.exit()
+    base = int(base_str)
+
+    # Vérification que l'exposant est un entier non négatif
+    if not exponent_str.isdigit():
+        print("erreur.")
+        sys.exit()
+    exponent = int(exponent_str)
+    if exponent < 0:
+        print("erreur.")
+        sys.exit()
+
+    result = power(base, exponent)
+    print(result)
 
 if __name__ == "__main__":
     main()
