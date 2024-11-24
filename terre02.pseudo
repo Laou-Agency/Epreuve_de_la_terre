@@ -1,0 +1,28 @@
+Import librairie 
+
+afficher arguments
+pour index passer tous les arguments un par un 
+    retourner argument
+    repeter jusqu'à afficher tous les arguments
+afficher les arguments ligne par ligne
+
+
+
+
+
+Créer un programme = algorithme
+Je considère les arguments comme des éléments d'un tableau
+De gauche à droite = incrémentation
+Ainsi ma boucle va parcourir tous les éléments(mots + caractères spéciaux) du tableau
+Un par un
+Les afficher chacun élément sur un ligne distincte
+Je stocke chaque élément dans une Variables
+
+
+resultat = ""
+pour i de elements a 0 par par de + 1
+    element = chaine[i]
+    resultat = resultat + element // 
+    resultat += element
+afficher resultat
+afficher saut de ligne

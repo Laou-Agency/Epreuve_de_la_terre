@@ -1,0 +1,38 @@
+Créez un programme = algorithme
+Afficher les arguments = 
+Ligne par Ligne = 
+Peu importe le nombre d'arguments = 
+    illimité 
+    + alphanumémrique (lettres & caractères spéciaux)
+
+Sur quelle méthode ?
+Quels blocs élémentaires ?
+    Boucles
+    Variables
+    Conditions
+Comment découper une string ?
+Comment travailler sur une string?
+Suq quel index ?
+
+Sur quelles sources ?
+    MDN
+    Nodejs
+    Google
+    Stackoverflow
+    CheatSheet JavaScript de 0
+
+
+Valeur
+    renvoyer 2 valeurs
+
+
+
+Créer un programme = algorithme
+Je considère les arguments comme des éléments d'un tableau
+Ainsi ma boucle va parcourir tous les éléments(mots + caractères spéciaux) du tableau
+Un par un
+Les afficher chacun élément sur un ligne distincte
+Je stocke chaque élément dans une Variables
+
+
+pour i de de 
