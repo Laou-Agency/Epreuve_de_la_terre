@@ -1,0 +1,13 @@
+const process = require('process');
+
+// print process.argv
+const numberA = 97
+const numberN = 110
+const numberZ = 122
+let alphabet = "";
+
+for (let i = 0; i < process.argv.length; i++) {
+    
+    alphabet += String.fromCharCode(i);
+}
+console.log(process.argv[i]);

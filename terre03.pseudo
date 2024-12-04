@@ -1,0 +1,8 @@
+variable str = ""
+variable nombre ASCII (a) = lettre alphabet (x)
+variable nombre ASCII (n) = lettre alphabet (y)
+
+pour (variable modifiable a egal 0 a plus grand que x incrémenter a
+    resultat str plus a 
+
+afficher str    

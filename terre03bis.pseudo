@@ -1,0 +1,22 @@
+Créez un programme
+alphabet = ""
+pour chaque lettre donnée en argument 
+si la lettre est n
+retourner l'alphabet
+à partir de n jusqu'a z
+
+
+qui affiche l'alphabet
+n = nombre x
+z = nombre z
+
+à partir de la lettre donnée
+
+
+en argument
+
+
+en lettres minuscules
+
+
+suivi d'un retour à la ligne

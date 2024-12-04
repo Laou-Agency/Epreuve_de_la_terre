@@ -1,0 +1,32 @@
+Créer un programme
+    algorithme
+    boucle
+        for
+    
+qui affiche l'alphabet
+    convertir les int en str
+    table ASCII
+
+
+à partir de la lettre donnée
+    quel type ?
+        str
+        objet
+        itérable
+
+en argument
+    comment récupérer des arguments ?
+        process.argv[0]
+
+en lettre minuscules
+    indiquer les lettres minuscules
+    
+suivi d'un retour à la ligne
+
+
+De quels outils j'ai besoin ?
+    MDN
+        boucle for
+    DevDocs
+Comment les utiliser ?
+    Syntaxe

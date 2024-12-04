@@ -1,0 +1,37 @@
+Créez un programme
+    algorithme
+        boucle for
+        boucle for of
+
+qui affiche l'alphabet
+    quel type ?
+        str
+            rechercher méthode applicable sur une string
+                CheatSheet
+                MDN
+                Nodejs
+                DevDocs
+                Phind
+    parcour l'alphabet
+        ASCII
+        convertir int en str
+
+à partir de la lettre donnée
+    prend uniquement 1 seul argument
+
+en argument
+    quelle méthode ?
+        process.argv
+
+en lettres minuscules
+    comment faire ?
+        lui indiquer la table ASCII en minuscules
+        MDN
+
+suivi d'un retour à la ligne
+    \n
+
+Rechercher par mot-clé
+    path
+    string
+    slice
