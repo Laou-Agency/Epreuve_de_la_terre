@@ -1,0 +1,44 @@
+Créez un programme
+Créer une boucle for
+    car je ne connais pas le nombre de répétitions dont j'aurais besoin
+    pour la lettre donnée en argument // x
+        si la lettre est égale ou supérieure a l'argument 
+        si l'argument est égale ou inférieure a z // x < y; y < z; z = z;
+    afficher l'argument et l'alphabet égal et supérieur // xyz
+
+// Cas d'usage
+// Afficher [x, y, z]
+
+
+qui affiche l'alphabet
+    intégrer l'alphabet entier (26 lettres)
+        lettre alphabet x = nombre ASCII x // lettre alphabet y = nombre ASCII y
+        lettre alphabet y = nombre ASCII y // lettre alphabet z = nombre ASCII z
+
+    qui parcours l'alphabet
+
+
+à partir (=) de la lettre donnée en argument
+la condition est que la boucle parcours l'alphabet
+à partir de l'argument
+si la lettre est égale a l'argument
+argument = lettre donnée //
+    ainsi on exclue par une condition les lettres avant l'argument
+    on affiche
+        la lettre correspondant à l'argument // égale à
+        les lettres suivantes // supérieure à
+
+
+en lettres minuscules 
+    les lettres ASCII de 97 à 122
+
+
+suivi d'un retour à la ligne.
+    manipulation pour sauter une ligne
+
+
+Tout ce qui se conçoit bien,
+s'énonce clairement,
+et le code pour le représenter
+vient aisément.
+Tu dois avoir des plages horaires durant lesquelles tu te réalises.

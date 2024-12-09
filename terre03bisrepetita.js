@@ -7,10 +7,9 @@ const numberA = String.fromCharCode(97);
 const numberZ = String.fromCharCode(122);
 
 let alphabet = '';
+let retourALaLigne = "\n";
 
-
-for (let i = asciiConverter; i <= 122; i++) {
+for (let i = asciiConverter; i <= numberZ; i++) {
     alphabet += String.fromCharCode(i);
 }
 console.log(alphabet);
-
