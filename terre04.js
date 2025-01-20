@@ -1,23 +1,14 @@
-const arguments = process.argv.slice(2);
-
-const user = arguments[0];
-let input = '';
-
-
-// Vérification si un input a été entré
-if (typeof input === "string" && input.length === 0) {
-    console.log("Tu ne me la mettras pas à l'envers.")
-}
-
-
-// Vérification si aucun l'input est une string 
-if (typeof input === "string"); // true
-console.log("Tu ne me la mettras pas à l'envers.");
-
-
-// Vérification du nombre pair ou impair
-if (input % 2 === 0) {
-    console.log(input + "pair");
+let number = process.argv.slice(2);
+// Si la taille de mon tableau est vide afficher "tu ne me la mettras pas à l'envers."
+if (number.length === 0) {
+    console.log("Tu ne me la mettras pas à l'envers.");
 } else {
-    console.log(input + "impair");
+    let n = Number.parseInt(number[0]); // Convertir l'entrée str en int
+    if (Number.isNaN(n)){ // Vérifier que l'entrée est une str
+        console.log("Tu ne me la mettras pas à l'envers.");
+    } else if (n % 2 === 0) { // Vérifier que le nombre est pair ou impair
+        console.log(`${n} pair`);
+    } else {
+        console.log(`${n} impair`);
+    }   
 }
