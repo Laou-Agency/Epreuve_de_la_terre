@@ -1,0 +1,44 @@
+Mon algorithme va déceler si
+
+
+un argument
+    récupérer un argument
+
+un entier pair ou impair
+    diviser le nombre par 2
+    pour déterminer s'il est 
+        pair
+        impair
+
+un entier négatif
+    une condition pour exclure les négatifs
+    inférieur à 0
+
+
+paramétrer la gestion d'erreurs
+    str
+        erreur
+        si l'argument est une string = erreur
+        voir la méthode
+    aucun argument
+        erreur
+
+
+Recherches
+
+Comment déterminer qu'un input est un nombre est pair ?
+    remainder
+Comment déterminer qu'un input est un nombre est impair ?
+    remainder
+Comment déterminer qu'un élément(input) est une string ?
+    NaN
+    typeof
+    isNaN()
+Comment déterminer qu'aucun élément (input) n'a été fourni ?
+    null
+
+Comment récupérer un input en JavaScript ?
+
+Comment créer une condition qui compte le nombre d'input ?
+    === 0
+Veuiller entrer
