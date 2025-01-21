@@ -1,0 +1,47 @@
+Comment saisir un argument ?
+    process.argv.slice()
+
+
+Comment convertir un str en int ?
+    Number.parseInt(number[0]);
+
+Créez un programme qui affiche le résultat 
+    Quels sont les éléments qui composent une division ?
+        diviseur
+        dividende
+        quotient
+        résultat
+        reste
+    
+    Comment gérer une division avec JavaScript ?
+    
+
+    Combien d'arguments minimum ?
+        2
+
+    Quels sont les différents cas de figure ?
+        Positif
+        si Le dividende > diviseur
+        afficher resultat
+        afficher reste
+
+        La division fourni le résultat et le reste
+        Erreurs
+
+        La diviseur est = zéro
+        si dividende = 0
+        afficher erreur
+
+        Le dividende est > au diviseur
+        si dividende < diviseur
+        afficher erreur
+
+et le reste d'une division entre deux nombres
+
+Quelles sources consulter ?
+    MDN
+    Node JS
+    Google
+        division
+    Phind
+    Deepl
